@@ -1,0 +1,144 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="user.master.cs" Inherits="user_user" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+<link href="~/css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="~/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="~/css/font-awesome.css" rel="stylesheet"/>
+<script src="~/js/jquery.min.js"></script>
+<link href='//fonts.googleapis.com/css?family=Cagliostro' rel='stylesheet' type='text/css'/>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700italic,700,600italic,600,400italic,300italic,300' rel='stylesheet' type='text/css'/>
+	<script src="~/js/main.js"></script>
+<script type="~/text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+    	<div class="header">
+			<div class="header-top">
+				<div class="container">
+					 <div class="top-left">
+						<a href="#"> Help  <i class="glyphicon glyphicon-phone" aria-hidden="true"></i> +0123-456-789</a>
+					</div>
+					<div class="top-right">
+                        
+					    <ul>
+                      <li> <asp:Button ID="Button2" runat="server" Text="Logout" style="background-color:transparent;" OnClick="Button2_Click"/></li> 
+					
+                           </ul>
+                	</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="heder-bottom">
+				<div class="container">
+					<div class="logo-nav">
+                        <div class="logo-nav-left">
+							<h1><asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="home.aspx">Toy Store<span>toys anywhere</span></asp:HyperLink></h1>
+						</div>
+						<div class="logo-nav-left1">
+							<nav class="navbar navbar-default">
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header nav_2">
+								<button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div> 
+							<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+								<ul class="nav navbar-nav">
+									<li>
+                                        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="product.aspx">Products</asp:HyperLink></li>	
+									<!-- Mega Menu -->
+									<li><asp:HyperLink runat="server" NavigateUrl="myorders.aspx">My Orders</asp:HyperLink></li>
+									<li><asp:HyperLink runat="server" NavigateUrl="mycart.aspx">Cart</asp:HyperLink></li>
+                                    																
+								</ul>
+							</div>
+							</nav>
+						</div>
+						<div class="header-right2">
+						  <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="mydetails.aspx">
+                        <asp:Image ID="Image1" runat="server"  Height="50" Width="60" style="border-radius:25px"/></asp:HyperLink>	
+						</div>	
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+		<!--header-->
+
+       <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+    </form>
+<div class="footer-w3l">
+						<div class="container">
+							<div class="footer-grids">
+								<div class="col-md-3 footer-grid">
+									<h4>About </h4>
+									<p>Toy Store is an Online portal for our kids to esliy pick upa their desired toys .</p>
+									<div class="social-icon">
+										<a href="#"><i class="icon"></i></a>
+										<a href="#"><i class="icon1"></i></a>
+										<a href="#"><i class="icon2"></i></a>
+										<a href="#"><i class="icon3"></i></a>
+									</div>
+								</div>
+								<div class="col-md-3 footer-grid">
+									<h4>My Account</h4>
+									<ul>
+										<li><asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/login.aspx">Login</asp:HyperLink></li>
+										<li><asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/dealer_reg.aspx">Dealer Registration</asp:HyperLink></li>
+										<li><asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/user_reg.aspx">User Registration</asp:HyperLink></li>
+									</ul>
+								</div>
+								<div class="col-md-3 footer-grid">
+									<h4>Information</h4>
+									<ul>
+										<li><asp:HyperLink runat="server" NavigateUrl="home.aspx">Home</asp:HyperLink></li>
+										<li><asp:HyperLink runat="server" NavigateUrl="addproduct.aspx">Add Product</asp:HyperLink></li>
+										<li><asp:HyperLink runat="server" NavigateUrl="order.aspx">Orders</asp:HyperLink></li>
+										<li><asp:HyperLink runat="server" NavigateUrl="products.aspx">Product List</asp:HyperLink></li>
+							        </ul>
+								</div>
+								<div class="col-md-3 footer-grid foot">
+									<h4>Contacts</h4>
+									<ul>
+										<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i><a href="#">E Comertown Rd, Westby, USA</a></li>
+										<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i><a href="#">1 599-033-5036</a></li>
+										<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:example@mail.com"> example@mail.com</a></li>
+										
+									</ul>
+								</div>
+							<div class="clearfix"> </div>
+							</div>
+							
+						</div>
+					</div>
+				
+        <div class="copy-section">
+						<div class="container">
+							<div class="copy-left">
+								<p>&copy; 2016 Toy Store . All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+							</div>
+							<div class="copy-right">
+								<img src="images/card.png" alt=""/>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				<!--copy-->
+
+</body>
+</html>
